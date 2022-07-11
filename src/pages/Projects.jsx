@@ -1,6 +1,7 @@
 import React from "react";
-// import { Link } from "react-router-dom";
-import Project_img1 from "../assets/jpg/project-background1.jpg";
+import Project_img1 from "../assets/png/meal-finder.png";
+import Project_spotify from "../assets/png/spotify3.png";
+
 import {
   SiJavascript,
   SiNodedotjs,
@@ -8,12 +9,17 @@ import {
   SiHtml5,
   // SiMongodb,
 } from "react-icons/si";
+import { DiCss3 } from "react-icons/di";
+import { FaGitAlt, FaNpm, FaReact } from "react-icons/fa";
 import Card from "../components/shared/Card";
 
 function Projects() {
-  // const onclick = (e) => {
-  //   window.location.href = "https://www.google.com";
-  // };
+  const iconStyles = {
+    color: "#fefefe",
+    background: "transparent",
+    fontSize: "20px",
+    marginRight: "20px",
+  };
 
   return (
     <>
@@ -28,7 +34,7 @@ function Projects() {
             </div>
 
             <div className="right">
-              <h1>Project 1</h1>
+              <h1>Meal Finder</h1>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
                 voluptate et dolorem molestiae fuga, molestias consectetur neque
@@ -36,49 +42,38 @@ function Projects() {
                 velit. Autem, recusandae non.
               </p>
               <div className="project-buttons">
-                <button className="btn">Code</button>
+                <a
+                  href="https://github.com/LukeWPhillips/Meal-Finder.git"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <button className="btn">Code</button>
+                </a>
 
-                <button className="btn">Live App</button>
+                <a
+                  href="https://lukewphillips.github.io/Meal-Finder/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <button className="btn">Live App</button>
+                </a>
               </div>
               <div className="project-icons">
-                <SiJavascript
-                  style={{
-                    color: "#fefefe",
-                    background: "transparent",
-                    fontSize: "20px",
-
-                    marginRight: "20px",
-                  }}
-                />
-                <SiNodedotjs
-                  style={{
-                    color: "#fefefe",
-                    background: "transparent",
-                    fontSize: "20px",
-
-                    marginRight: "20px",
-                  }}
-                />
-                <SiHtml5
-                  style={{
-                    color: "#fefefe",
-                    background: "transparent",
-                    fontSize: "20px",
-                    marginRight: "20px",
-                  }}
-                />
+                <SiJavascript style={iconStyles} />
+                <DiCss3 style={iconStyles} />
+                <SiHtml5 style={iconStyles} />
               </div>
             </div>
           </Card>
           <Card>
             <div className="left">
               <div className="project-image">
-                <img src={Project_img1} alt="" />
+                <img src={Project_spotify} alt="" />
               </div>
             </div>
 
             <div className="right">
-              <h1>Project 1</h1>
+              <h1>Spotify Clone</h1>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
                 voluptate et dolorem molestiae fuga, molestias consectetur neque
@@ -86,44 +81,34 @@ function Projects() {
                 velit. Autem, recusandae non.
               </p>
               <div className="project-buttons">
-                <button className="btn">Code</button>
+                <a
+                  href="https://github.com/LukeWPhillips/Spotify-clone.git"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <button className="btn">Code</button>
+                </a>
 
-                <button className="btn">Live App</button>
+                <a
+                  href="https://lukewphillips.github.io/Spotify-clone/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <button className="btn">Live App</button>
+                </a>
               </div>
               <div className="project-icons">
-                <SiJavascript
-                  style={{
-                    color: "#fefefe",
-                    background: "transparent",
-                    fontSize: "20px",
-
-                    marginRight: "20px",
-                  }}
-                />
-                <SiNodedotjs
-                  style={{
-                    color: "#fefefe",
-                    background: "transparent",
-                    fontSize: "20px",
-
-                    marginRight: "20px",
-                  }}
-                />
-                <SiHtml5
-                  style={{
-                    color: "#fefefe",
-                    background: "transparent",
-                    fontSize: "20px",
-                    marginRight: "20px",
-                  }}
-                />
+                <SiJavascript style={iconStyles} />
+                <DiCss3 style={iconStyles} />
+                <SiHtml5 style={iconStyles} />
               </div>
             </div>
           </Card>
+
           <Card reverse={true}>
             <div className="left">
               <div className="project-image">
-                <img src={Project_img1} alt="" />
+                <img src="" alt="" />
               </div>
             </div>
 

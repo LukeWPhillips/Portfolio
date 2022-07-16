@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/Portfolio/static/css/main.6c81193b.css",
+    "main.js": "/Portfolio/static/js/main.cad723be.js",
+    "static/media/yelpcamp.png": "/Portfolio/static/media/yelpcamp.b1dbf04fc5b5ca2cdff7.png",
+    "static/media/meal-finder.png": "/Portfolio/static/media/meal-finder.97003b9da8a9161c2edf.png",
+    "static/media/spotify3.png": "/Portfolio/static/media/spotify3.7faceded78b45ef347cb.png",
+    "static/media/house-marketplace.png": "/Portfolio/static/media/house-marketplace.54db79356582183741ac.png",
+    "index.html": "/Portfolio/index.html",
+    "main.6c81193b.css.map": "/Portfolio/static/css/main.6c81193b.css.map",
+    "main.cad723be.js.map": "/Portfolio/static/js/main.cad723be.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6c81193b.css",
+    "static/js/main.cad723be.js"
+  ]
+}

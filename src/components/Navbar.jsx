@@ -1,4 +1,5 @@
 import { FaHome } from "react-icons/fa";
+import { SiGithub, SiLinkedin } from "react-icons/si";
 import { NavHashLink, HashLink } from "react-router-hash-link";
 
 function Navbar() {
@@ -39,6 +40,22 @@ function Navbar() {
           </NavHashLink>
         </li>
       </ul>
+      <div className="connect-container">
+        <div className="github">
+          <a
+            href="https://github.com/LukeWPhillips"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <SiGithub />
+          </a>
+        </div>
+        <div className="linkedin">
+          <a href="" target="_blank" rel="noreferrer">
+            <SiLinkedin />
+          </a>
+        </div>
+      </div>
     </nav>
   );
 }

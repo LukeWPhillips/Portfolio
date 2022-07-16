@@ -15,6 +15,7 @@ function Contact() {
 
   const onSubmit = (e) => {
     e.preventDefault();
+
     send("service_tk9redv", "template_1z3mqpi", toSend, "jEMInB3HyEDC_THeO")
       .then((res) => {
         toast.success("Email sent, thankyou.");
@@ -30,6 +31,7 @@ function Contact() {
   const handleChange = ({ target: { name, value } }) => {
     if (value === "") {
       setBtnDisabled(true);
+
       setToSend((prevState) => ({ [name]: value }));
     } else {
       setBtnDisabled(false);
@@ -42,8 +44,8 @@ function Contact() {
       <header className="sub-header">Contact</header>
       <form onSubmit={onSubmit} id="contact-form" action="">
         <div className="form-container">
-          <h1>Have any questions or want to work together?</h1>
-          <h2>Please get in touch.</h2>
+          <h1>Any questions?</h1>
+          <h1>Please get in touch...</h1>
           <div className="form-info">
             <input
               type="text"

@@ -16,7 +16,7 @@ function App() {
         <Navbar />
         {/* <Burger /> */}
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/Portfolio" element={<Home />} />
           <Route exact path="/page" element={<HashLinkPage />} />
         </Routes>
         <Footer />

@@ -11,7 +11,7 @@ function Home() {
           <span className="underline1"></span>
         </p>
         <p className="header">
-          Im a web developer.
+          I'm a web developer.
           <span className="underline2"></span>
         </p>
       </header>

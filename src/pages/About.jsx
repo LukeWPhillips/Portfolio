@@ -10,6 +10,7 @@ import { DiCss3 } from "react-icons/di";
 import { FaGitAlt, FaNpm, FaReact } from "react-icons/fa";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import me_img from "../assets/jpg/me.jpg";
 
 function About() {
   useEffect(() => {
@@ -20,20 +21,34 @@ function About() {
     <div className="about-container">
       <div className="sub-container">
         <div className="sub-header">About Me</div>
-        <div className="img-me"></div>
+        <div className="img-me">
+          <img src={me_img} alt="" id="img" />
+        </div>
         <div
           data-aos="slide-up"
           data-aos-duration="2000"
           className="about-description"
         >
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum culpa
-          architecto numquam blanditiis fugiat, eveniet animi nostrum voluptas
-          fuga quis ex quod molestias reiciendis non ipsam officia maxime est
-          facere.
+          <p style={{ letterSpacing: "2px", fontWeight: "600" }}>
+            Hi i'm Luke an aspiring junior looking to kickstart a career in web
+            development, i love building responsive well designed websites and
+            bringing code to life. I have long been interested in technology and
+            completed a diploma in computing at a younger age, and only now am
+            realising its where i want to be.
+            <br />
+            In my free time i will be outdoors exploring new hiking trails and
+            camping spots with family and friends. I also enjoy woodworking and
+            playing the ukulele.
+          </p>
         </div>
       </div>
       <div className="sub-container">
-        <div className="sub-header">Skills</div>
+        <div className="sub-header" style={{ marginBottom: "0.5rem" }}>
+          Skills
+        </div>
+        <h2 style={{ color: "#72addd", marginBottom: "50px" }}>
+          A selection of stuff i can do...
+        </h2>
         <div
           data-aos="slide-up"
           data-aos-duration="2000"

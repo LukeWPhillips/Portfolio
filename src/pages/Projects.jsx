@@ -2,17 +2,10 @@ import React from "react";
 import Project_img1 from "../assets/png/meal-finder.png";
 import Project_spotify from "../assets/png/spotify3.png";
 import Project_marketplace from "../assets/png/house-marketplace.png";
-import Project_yelpcamp from "../assets/png/yelpcamp.png";
-
-import {
-  SiJavascript,
-  SiNodedotjs,
-  // SiGithub,
-  SiHtml5,
-  SiMongodb,
-} from "react-icons/si";
+import Project_camping from "../assets/png/camping_log.png";
+import { SiJavascript, SiNodedotjs, SiHtml5, SiMongodb } from "react-icons/si";
 import { DiCss3 } from "react-icons/di";
-import { FaGitAlt, FaNpm, FaReact } from "react-icons/fa";
+import { FaReact } from "react-icons/fa";
 import Card from "../components/shared/Card";
 
 function Projects() {
@@ -21,6 +14,10 @@ function Projects() {
     background: "transparent",
     fontSize: "20px",
     marginRight: "20px",
+  };
+
+  const h1Styles = {
+    color: "#72addd",
   };
 
   return (
@@ -36,12 +33,12 @@ function Projects() {
             </div>
 
             <div className="right">
-              <h1>Meal Finder</h1>
+              <h1 style={h1Styles}>Meal Finder</h1>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
-                voluptate et dolorem molestiae fuga, molestias consectetur neque
-                deleniti, rem nulla eum dolore ducimus ipsam maiores expedita
-                velit. Autem, recusandae non.
+                This app uses a third party API to seach for meals and displays
+                the meal along with instructions and ingredients. A pretty basic
+                layout using css and vanillaJS. I wanted to do something to
+                practice my javascript skills whilst making fetch request.
               </p>
               <div className="project-buttons">
                 <a
@@ -75,12 +72,13 @@ function Projects() {
             </div>
 
             <div className="right">
-              <h1>Spotify Clone</h1>
+              <h1 style={h1Styles}>Spotify Clone</h1>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
-                voluptate et dolorem molestiae fuga, molestias consectetur neque
-                deleniti, rem nulla eum dolore ducimus ipsam maiores expedita
-                velit. Autem, recusandae non.
+                This project was about focusing on my css ability and attempting
+                to replicate Spotify's main page. I also added in some
+                javascript functionality with the playbar and localstorage. I
+                found it a challenge getting the layout correct but perservered
+                and i think it turned out ok.
               </p>
               <div className="project-buttons">
                 <a
@@ -115,12 +113,10 @@ function Projects() {
             </div>
 
             <div className="right">
-              <h1>House Marketplace</h1>
+              <h1 style={h1Styles}>House Marketplace</h1>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
-                voluptate et dolorem molestiae fuga, molestias consectetur neque
-                deleniti, rem nulla eum dolore ducimus ipsam maiores expedita
-                velit. Autem, recusandae non.
+                A marketplace where people can list their property for rent or
+                sale. Using Firebase as the backend and React for the frontend.
               </p>
               <div className="project-buttons">
                 <a
@@ -140,98 +136,52 @@ function Projects() {
                 </a>
               </div>
               <div className="project-icons">
-                <SiJavascript
-                  style={{
-                    color: "#fefefe",
-                    background: "transparent",
-                    fontSize: "20px",
-
-                    marginRight: "20px",
-                  }}
-                />
-                <SiNodedotjs
-                  style={{
-                    color: "#fefefe",
-                    background: "transparent",
-                    fontSize: "20px",
-
-                    marginRight: "20px",
-                  }}
-                />
-                <SiHtml5
-                  style={{
-                    color: "#fefefe",
-                    background: "transparent",
-                    fontSize: "20px",
-                    marginRight: "20px",
-                  }}
-                />
-                <FaReact
-                  style={{
-                    color: "#fefefe",
-                    background: "transparent",
-                    fontSize: "20px",
-                    marginRight: "20px",
-                  }}
-                />
+                <SiJavascript style={iconStyles} />
+                <SiNodedotjs style={iconStyles} />
+                <SiHtml5 style={iconStyles} />
+                <FaReact style={iconStyles} />
               </div>
             </div>
           </Card>
           <Card>
             <div className="left">
               <div className="project-image">
-                <img src={Project_yelpcamp} alt="" />
+                <img src={Project_camping} alt="" />
               </div>
             </div>
 
             <div className="right">
-              <h1>Project 1</h1>
+              <h1 style={h1Styles}>Campsite Log</h1>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
-                voluptate et dolorem molestiae fuga, molestias consectetur neque
-                deleniti, rem nulla eum dolore ducimus ipsam maiores expedita
-                velit. Autem, recusandae non.
+                A MERN application that allows users to register and store their
+                campsites with full CRUD functionality. Something i've been
+                looking for myself, a place to log your adventures. I used MUI
+                for some of the design work. I wanted to do a MERN stack to
+                challenge myself to more backend skills as well as continuing
+                with my React learning.
               </p>
               <div className="project-buttons">
-                <button className="btn">Code</button>
-
-                <button className="btn">Live App</button>
+                <a
+                  href="https://github.com/LukeWPhillips/Portfolio.git"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <button className="btn">Code</button>
+                </a>
+                <a
+                  href="https://phillipscampingapp.herokuapp.com/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <button className="btn">Live App</button>
+                </a>
               </div>
               <div className="project-icons">
-                <SiJavascript
-                  style={{
-                    color: "#fefefe",
-                    background: "transparent",
-                    fontSize: "20px",
-
-                    marginRight: "20px",
-                  }}
-                />
-                <SiNodedotjs
-                  style={{
-                    color: "#fefefe",
-                    background: "transparent",
-                    fontSize: "20px",
-
-                    marginRight: "20px",
-                  }}
-                />
-                <SiHtml5
-                  style={{
-                    color: "#fefefe",
-                    background: "transparent",
-                    fontSize: "20px",
-                    marginRight: "20px",
-                  }}
-                />
-                <SiMongodb
-                  style={{
-                    color: "#fefefe",
-                    background: "transparent",
-                    fontSize: "20px",
-                    marginRight: "20px",
-                  }}
-                />
+                <SiJavascript style={iconStyles} />
+                <SiNodedotjs style={iconStyles} />
+                <SiHtml5 style={iconStyles} />
+                <SiMongodb style={iconStyles} />
+                <FaReact style={iconStyles} />
               </div>
             </div>
           </Card>

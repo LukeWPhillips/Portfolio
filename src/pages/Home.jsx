@@ -1,5 +1,4 @@
 import { IoIosArrowDown } from "react-icons/io";
-
 import { HashLink } from "react-router-hash-link";
 
 function Home() {
@@ -7,11 +6,10 @@ function Home() {
     <div className="home">
       <header>
         <p className="header">
-          Hi, I'm Luke.
-          <span className="underline1"></span>
+          Luke Phillips <span className="underline1"></span>
         </p>
-        <p className="header">
-          I'm a web developer.
+        <p className="header" style={{ fontSize: "4rem" }}>
+          Web developer
           <span className="underline2"></span>
         </p>
       </header>

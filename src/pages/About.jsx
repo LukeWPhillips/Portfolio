@@ -10,7 +10,7 @@ import { DiCss3 } from "react-icons/di";
 import { FaGitAlt, FaNpm, FaReact } from "react-icons/fa";
 import Aos from "aos";
 import "aos/dist/aos.css";
-import me_img from "../assets/jpg/me.jpg";
+import me_img from "../assets/jpg/me3.jpg";
 
 function About() {
   useEffect(() => {
@@ -43,12 +43,10 @@ function About() {
         </div>
       </div>
       <div className="sub-container">
-        <div className="sub-header" style={{ marginBottom: "0.5rem" }}>
+        <div className="sub-header" style={{ marginBottom: "3rem" }}>
           Skills
         </div>
-        <h2 style={{ color: "#72addd", marginBottom: "50px" }}>
-          A selection of stuff i can do...
-        </h2>
+
         <div
           data-aos="slide-up"
           data-aos-duration="2000"

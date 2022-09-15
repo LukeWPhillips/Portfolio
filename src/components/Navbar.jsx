@@ -109,7 +109,11 @@ function Navbar() {
               </a>
             </div>
             <div className="linkedin">
-              <a href="/#" target="_blank" rel="noreferrer">
+              <a
+                href="https://www.linkedin.com/in/luke-w-phillips/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <SiLinkedin />
               </a>
             </div>

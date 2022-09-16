@@ -128,7 +128,7 @@ function Projects() {
                 </a>
 
                 <a
-                  href="https://lukewphillips.github.io/House-Marketplace/"
+                  href="https://house-marketplace-app-2a89c.web.app/"
                   target="_blank"
                   rel="noreferrer"
                 >

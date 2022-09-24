@@ -179,9 +179,9 @@ body {
   align-items: center;
   flex-direction: column;
   margin-bottom: 5rem;
-  color: #003554;
+  color: #fefefe;
   font-size: 5rem;
-  animation: fadeIn 6s;
+  animation: fadeIn 5s;
 
 }
 

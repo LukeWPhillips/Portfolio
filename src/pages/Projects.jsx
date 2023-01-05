@@ -1,7 +1,7 @@
 import React from "react";
 import Project_img1 from "../assets/png/meal-finder.png";
 import Project_spotify from "../assets/png/spotify3.png";
-import Project_marketplace from "../assets/png/house-marketplace.png";
+import Eco_houses from "../assets/png/eco-houses.png";
 import Project_camping from "../assets/png/camping_log.png";
 import { SiJavascript, SiNodedotjs, SiHtml5, SiMongodb } from "react-icons/si";
 import { DiCss3 } from "react-icons/di";
@@ -23,7 +23,10 @@ function Projects() {
   return (
     <>
       <section className="projects-container">
-        <header className="sub-header">Projects</header>
+        <div className="sub-header">
+          <h1>Projects</h1>
+          <div className="sub-header_underline"></div>
+        </div>
         <div className="all-items">
           <Card reverse={true}>
             <div className="left">
@@ -35,10 +38,10 @@ function Projects() {
             <div className="right">
               <h1 style={h1Styles}>Meal Finder</h1>
               <p>
-                This app uses a third party API to seach for meals and displays
-                the meal along with instructions and ingredients. A pretty basic
-                layout using css and vanillaJS. I wanted to do something to
-                practice my javascript skills whilst making fetch request.
+                The implementation was done in Vanilla JS. It is a static
+                website, but uses a RESTful API for the meals and ingredients. A
+                clean, user friendly layout using CSS and VanillaJS. I wanted to
+                do something to practice making fetch requests.
               </p>
               <div className="project-buttons">
                 <a
@@ -74,11 +77,12 @@ function Projects() {
             <div className="right">
               <h1 style={h1Styles}>Spotify Clone</h1>
               <p>
-                This project was about focusing on my css ability and attempting
-                to replicate Spotify's main page. I also added in some
-                javascript functionality with the playbar and localstorage. I
-                found it a challenge getting the layout correct but perservered
-                and i think it turned out ok.
+                This project is a clone of the Spotify main page. My focus was
+                to further my CSS layout skills using Flexbox. The main
+                challenge was setting out all the content and making it
+                responsive for different window sizes using media queries. I
+                also decided to add a functioning playbar and localStorage
+                capabiltiy.
               </p>
               <div className="project-buttons">
                 <a
@@ -108,19 +112,21 @@ function Projects() {
           <Card reverse={true}>
             <div className="left">
               <div className="project-image">
-                <img src={Project_marketplace} alt="" />
+                <img src={Eco_houses} alt="" />
               </div>
             </div>
 
             <div className="right">
-              <h1 style={h1Styles}>House Marketplace</h1>
+              <h1 style={h1Styles}>Eco-Housing</h1>
               <p>
-                A marketplace where people can list their property for rent or
-                sale. Using Firebase as the backend and React for the frontend.
+                A marketplace for off grid properties. Something I am passionate
+                about, built using Firebase and ReactJS. The biggest challenge
+                was user authentication and handling the form data. I overcame
+                this by working through the docs on Firebase.
               </p>
               <div className="project-buttons">
                 <a
-                  href="https://github.com/LukeWPhillips/House-Marketplace.git"
+                  href="https://github.com/LukeWPhillips/eco-houses.git"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -128,7 +134,7 @@ function Projects() {
                 </a>
 
                 <a
-                  href="https://house-marketplace-app-2a89c.web.app/"
+                  href="https://lukewphillips.github.io/eco-houses/"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -169,7 +175,7 @@ function Projects() {
                   <button className="btn">Code</button>
                 </a>
                 <a
-                  href="https://phillipscampingapp.herokuapp.com/"
+                  href="https://camping-log.onrender.com"
                   target="_blank"
                   rel="noreferrer"
                 >

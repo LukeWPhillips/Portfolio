@@ -8,12 +8,17 @@
 
 }
 
+
+
 :root {
   --ff-primary: 'source sans pro'
 }
 
-body {
+body, html {
   margin: 0;
+  height: 100%;
+  width: 100%;
+  padding: 0;
   font-family: 'source sans pro', 'monospace', sans-serif;
   box-sizing: border-box;
 
@@ -61,7 +66,7 @@ body {
   position: absolute;
   right: 20px;
   font-size: 2rem;
-  color: #fefefe;
+  color: #f2c95a;
 }
 
 .connect-container {
@@ -119,12 +124,12 @@ body {
   color: #00afb5;
   text-decoration: none;
   cursor: pointer;
-  transition: all 0.2s;
+  transition: all 0.1s;
 
 }
 
 .link:hover {
-  color: #78290f;
+  color: #f2c95a;
   text-decoration: underline;
   text-underline-offset: 3px;
 }
@@ -144,12 +149,12 @@ body {
   align-items: center;
   font-size: 20px;
   cursor: pointer;
-  color: #15616d;
-  transition: all 0.2s;
+  color: #00afb5;
+  transition: all 0.1s;
 }
 
 .home-link:hover {
-  color: #15616d;
+  color: #f2c95a;
 }
 
 
@@ -182,6 +187,7 @@ body {
   color: #fefefe;
   font-size: 5rem;
   animation: fadeIn 5s;
+  width: auto;
 
 }
 
@@ -218,7 +224,7 @@ body {
 
 
   .underline2 {
-    width: 20rem;
+    width: 12rem;
   }
 }
 
@@ -286,9 +292,40 @@ body {
   padding-top: 3rem;
 }
 
-@media (min-width: 600px) {
-  .about-description {
-    width: 80%;
+.sub-header {
+
+  display: block;
+  width: 100%;
+  height: 30px;
+  margin: 4rem auto;
+  padding-left: 2rem;
+
+}
+
+.sub-header h1 {
+  font-size: 35px;
+  color: #78a1bb;
+
+}
+
+.sub-header_underline {
+  width: 75px;
+  height: 2px;
+  margin-top: 10px;
+  background-color: #f2c95a;
+}
+
+@media screen and (max-width: 640px) {
+  .sub-header {
+
+    display: block;
+    width: 100%;
+    font-size: 40px;
+    color: #78a1bb;
+    height: 30px;
+    margin: 5rem auto;
+    padding-left: 1rem;
+
   }
 }
 
@@ -310,6 +347,33 @@ body {
   margin-bottom: 0px;
   margin-top: 10px;
 
+}
+
+.sub-container-about {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.about-description p {
+
+  margin-bottom: 50px;
+}
+
+/* @media (min-width: 200px) {
+  .about-description {
+    width: 80%;
+  }
+} */
+
+@media (max-width: 650px) {
+  .sub-container-about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
 }
 
 .skills-row {
@@ -351,8 +415,8 @@ body {
   align-self: center;
   justify-content: center;
   margin-top: 1px;
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
 
 
 
@@ -361,20 +425,6 @@ body {
 #img {
   width: 100%;
   border-radius: 100px;
-
-
-}
-
-.sub-header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 200px;
-  font-size: 40px;
-  color: #78a1bb;
-  height: 30px;
-
-  margin: 5rem auto;
 
 
 }
@@ -394,17 +444,14 @@ body {
   color: #fefefe;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 968px) {
   .about-description {
     width: 20rem;
     font-size: 1rem;
   }
-
-
 }
 
 .projects-container {
-
   width: 100%;
 }
 
@@ -454,7 +501,7 @@ body {
   height: 100%;
   right: 20px;
   transition: 0.6s ease transform;
-  opacity: calc(0.7);
+  filter: grayscale(50%);
 
 
 }
@@ -463,13 +510,13 @@ body {
   transform: scale(1.1);
   z-index: 1;
   transition: 0.6s ease-in transform;
-
+  filter: grayscale(0) brightness(110%);
 
 }
 
 .item .right {
   flex: 1;
-  margin-left: -150px;
+  margin-left: -25px;
   /* background-color: #003554; */
   opacity: 10;
   font-weight: 800;
@@ -477,6 +524,7 @@ body {
   border-radius: 12px;
   box-shadow: 0 0 20px rgba(95, 95, 95, 0.37);
   z-index: 2;
+
 }
 
 @media only screen and (max-width: 768px) {
@@ -519,7 +567,7 @@ body {
 }
 
 .item.reverse .left {
-  margin-left: -150px;
+  margin-left: -25px;
 }
 
 .item.reverse {
@@ -560,11 +608,7 @@ body {
     width: 80%;
   }
 
-  /* .project-buttons, .project-icons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  } */
+
 
 }
 
@@ -639,6 +683,7 @@ p, h1 {
 .contacts-container {
 
   height: 100%;
+  width: 100%;
   font-size: larger;
   background-color: #ffffff;
   margin-bottom: 10rem;
@@ -663,9 +708,7 @@ p, h1 {
 
 
 
-.contacts-container .sub-header {
-  margin: 20px 10px;
-}
+
 
 #contact-form {
   width: 100%;
@@ -720,8 +763,9 @@ p, h1 {
   border-radius: 5px;
   cursor: pointer;
   flex: 1;
-  font-size: 20px;
+  font-size: 12px;
   letter-spacing: 2px;
+
 }
 
 .submit-btn:disabled {
@@ -731,10 +775,11 @@ p, h1 {
   border-radius: 5px;
   cursor: pointer;
   flex: 1;
-  font-size: 20px;
+  font-size: 15px;
   letter-spacing: 2px;
   background-color: #15616d;
   color: #4fd9de;
+  height: 0.5rem;
 
 }
 

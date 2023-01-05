@@ -41,10 +41,12 @@ function Contact() {
 
   return (
     <div className="contacts-container">
-      <header className="sub-header">Contact</header>
+      <div className="sub-header">
+        <h1>Contact</h1>
+        <div className="sub-header_underline"></div>
+      </div>
       <form onSubmit={onSubmit} id="contact-form" action="">
         <div className="form-container">
-          <h1>Any questions?</h1>
           <h1>Please get in touch...</h1>
           <div className="form-info">
             <input
@@ -72,7 +74,7 @@ function Contact() {
             <textarea
               type="text"
               className="form-control-message"
-              placeholder="MESSAGE"
+              placeholder="Message"
               name="message"
               value={toSend.message}
               onChange={handleChange}

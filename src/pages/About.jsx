@@ -19,8 +19,11 @@ function About() {
 
   return (
     <div className="about-container">
-      <div className="sub-container">
-        <div className="sub-header">About Me</div>
+      <div className="sub-header" style={{ marginTop: "1rem" }}>
+        <h1>About Me</h1>
+        <div className="sub-header_underline"></div>
+      </div>
+      <div className="sub-container-about">
         <div className="img-me">
           <img src={me_img} alt="" id="img" />
         </div>
@@ -30,9 +33,9 @@ function About() {
           className="about-description"
         >
           <p style={{ letterSpacing: "2px", fontWeight: "600" }}>
-            Hi i'm Luke an aspiring junior looking to kickstart a career in web
-            development, i love building responsive well designed websites and
-            bringing code to life. I have long been interested in technology and
+            Hi! I'm an aspiring junior looking to start a career as a front end
+            developer. I love building responsive web applications and bringing
+            code to life. I have long been interested in technology and
             completed a diploma in computing at a younger age, and only now am
             realising its where i want to be.
             <br />
@@ -42,11 +45,11 @@ function About() {
           </p>
         </div>
       </div>
+      <div className="sub-header" style={{ marginTop: "3rem" }}>
+        <h1>Skills</h1>
+        <div className="sub-header_underline"></div>
+      </div>
       <div className="sub-container">
-        <div className="sub-header" style={{ marginBottom: "3rem" }}>
-          Skills
-        </div>
-
         <div
           data-aos="slide-up"
           data-aos-duration="2000"
@@ -64,7 +67,7 @@ function About() {
           </div>
           <div className="skills-item">
             <DiCss3 style={{ fontSize: "50px", marginBottom: "3px" }} />
-            CSS
+            CSS3
           </div>
           <div className="skills-item">
             <FaGitAlt
@@ -88,7 +91,7 @@ function About() {
                 marginBottom: "3px",
               }}
             />
-            HTML
+            HTML5
           </div>
           <div className="skills-item">
             <SiMongodb style={{ fontSize: "50px", marginBottom: "3px" }} />
@@ -116,7 +119,7 @@ function About() {
                 marginBottom: "3px",
               }}
             />
-            React
+            ReactJS
           </div>
         </div>
       </div>

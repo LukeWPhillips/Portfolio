@@ -8,8 +8,8 @@ function Home() {
         <p className="header">
           Luke Phillips <span className="underline1"></span>
         </p>
-        <p className="header" style={{ fontSize: "4rem" }}>
-          Web developer
+        <p className="header" style={{ fontSize: "3rem" }}>
+          Front End Developer
           <span className="underline2"></span>
         </p>
       </header>

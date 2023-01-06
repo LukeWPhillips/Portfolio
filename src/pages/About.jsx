@@ -35,9 +35,8 @@ function About() {
           <p style={{ letterSpacing: "2px", fontWeight: "600" }}>
             Hi! I'm an aspiring junior looking to start a career as a front end
             developer. I love building responsive web applications and bringing
-            code to life. I have long been interested in technology and
-            completed a diploma in computing at a younger age, and only now am
-            realising its where i want to be.
+            code to life. I have always been interested in technology and have a
+            Diploma in Computing which included web development.
             <br />
             In my free time i will be outdoors exploring new hiking trails and
             camping spots with family and friends. I also enjoy woodworking and

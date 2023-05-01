@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.0d23f4f4.css",
-    "main.js": "/static/js/main.501095a4.js",
-    "static/media/camping_log.png": "/static/media/camping_log.15eda81493f46aff445e.png",
-    "static/media/eco-houses.png": "/static/media/eco-houses.f176b64b736f0a188821.png",
-    "static/media/meal-finder.png": "/static/media/meal-finder.97003b9da8a9161c2edf.png",
-    "static/media/spotify3.png": "/static/media/spotify3.7faceded78b45ef347cb.png",
-    "static/media/me3.jpg": "/static/media/me3.d3b482592c6272a16f5a.jpg",
-    "index.html": "/index.html",
-    "main.0d23f4f4.css.map": "/static/css/main.0d23f4f4.css.map",
-    "main.501095a4.js.map": "/static/js/main.501095a4.js.map"
+    "main.css": "/Portfolio/static/css/main.0d23f4f4.css",
+    "main.js": "/Portfolio/static/js/main.a8a65a71.js",
+    "static/media/camping_log.png": "/Portfolio/static/media/camping_log.15eda81493f46aff445e.png",
+    "static/media/eco-houses.png": "/Portfolio/static/media/eco-houses.f176b64b736f0a188821.png",
+    "static/media/meal-finder.png": "/Portfolio/static/media/meal-finder.97003b9da8a9161c2edf.png",
+    "static/media/spotify3.png": "/Portfolio/static/media/spotify3.7faceded78b45ef347cb.png",
+    "static/media/me3.jpg": "/Portfolio/static/media/me3.d3b482592c6272a16f5a.jpg",
+    "index.html": "/Portfolio/index.html",
+    "main.0d23f4f4.css.map": "/Portfolio/static/css/main.0d23f4f4.css.map",
+    "main.a8a65a71.js.map": "/Portfolio/static/js/main.a8a65a71.js.map"
   },
   "entrypoints": [
     "static/css/main.0d23f4f4.css",
-    "static/js/main.501095a4.js"
+    "static/js/main.a8a65a71.js"
   ]
 }

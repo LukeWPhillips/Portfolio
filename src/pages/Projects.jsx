@@ -1,11 +1,11 @@
 import React from "react";
 import Project_img1 from "../assets/png/meal-finder.png";
-import Project_spotify from "../assets/png/spotify3.png";
+import Hawthorn_GC from "../assets/png/hawthorn_3.png";
 import Eco_houses from "../assets/png/eco-houses.png";
 import Project_camping from "../assets/png/camping_log.png";
 import { SiJavascript, SiNodedotjs, SiHtml5, SiMongodb } from "react-icons/si";
 import { DiCss3 } from "react-icons/di";
-import { FaReact } from "react-icons/fa";
+import { FaReact, FaSass } from "react-icons/fa";
 import Card from "../components/shared/Card";
 
 function Projects() {
@@ -70,23 +70,23 @@ function Projects() {
           <Card>
             <div className="left">
               <div className="project-image">
-                <img src={Project_spotify} alt="" />
+                <img src={Hawthorn_GC} alt="hawthornGc" />
               </div>
             </div>
 
             <div className="right">
-              <h1 style={h1Styles}>Spotify Clone</h1>
+              <h1 style={h1Styles}>Hawthorn Garden Care</h1>
               <p>
-                This project is a clone of the Spotify main page. My focus was
-                to further my CSS layout skills using Flexbox. The main
-                challenge was setting out all the content and making it
-                responsive for different window sizes using media queries. I
-                also decided to add a functioning playbar and localStorage
-                capabiltiy.
+                Freelance work for this landscaping business, collaborating with
+                the client on their requirements and bringing their business to
+                the web. <br></br>I chose React for the frontend and this was my
+                first time using sass. I had some issues when deploying with
+                http requests and react, but with some searching and tinkering i
+                found the solution .
               </p>
               <div className="project-buttons">
                 <a
-                  href="https://github.com/LukeWPhillips/Spotify-clone.git"
+                  href="https://github.com/LukeWPhillips/Hawthorn"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -94,7 +94,7 @@ function Projects() {
                 </a>
 
                 <a
-                  href="https://lukewphillips.github.io/Spotify-clone/"
+                  href="https://hawthorngardencare.co.uk"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -103,8 +103,9 @@ function Projects() {
               </div>
               <div className="project-icons">
                 <SiJavascript style={iconStyles} />
-                <DiCss3 style={iconStyles} />
+                <FaSass style={iconStyles} />
                 <SiHtml5 style={iconStyles} />
+                <FaReact style={iconStyles} />
               </div>
             </div>
           </Card>

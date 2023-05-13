@@ -7,7 +7,7 @@ import {
   SiMongodb,
 } from "react-icons/si";
 import { DiCss3 } from "react-icons/di";
-import { FaGitAlt, FaNpm, FaReact } from "react-icons/fa";
+import { FaGitAlt, FaNpm, FaReact, FaSass } from "react-icons/fa";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import me_img from "../assets/jpg/me3.jpg";
@@ -33,14 +33,15 @@ function About() {
           className="about-description"
         >
           <p style={{ letterSpacing: "2px", fontWeight: "600" }}>
-            Hi! I'm an aspiring junior looking to start a career as a front end
-            developer. I love building responsive web applications and bringing
-            code to life. I have always been interested in technology and have a
-            Diploma in Computing which included web development.
-            <br />
-            In my free time i will be outdoors exploring new hiking trails and
-            camping spots with family and friends. I also enjoy woodworking and
-            playing the ukulele.
+            Im a front end developer who is passionate about creating responsive
+            applications and experiences. <br />I completed a diploma in
+            computing when i was younger, fast forward and i have now reignited
+            my coding journey, learning new languages and freelancing on the
+            side.
+            <p>
+              If im not coding you will find me out on hiking trails with my
+              family or on the water wing surfing.
+            </p>
           </p>
         </div>
       </div>
@@ -78,6 +79,7 @@ function About() {
             />
             Git
           </div>
+
           <div className="skills-item">
             <SiGithub style={{ fontSize: "50px", marginBottom: "3px" }} />
             Github
@@ -119,6 +121,16 @@ function About() {
               }}
             />
             ReactJS
+          </div>
+          <div className="skills-item">
+            <FaSass
+              style={{
+                color: "#78a1bb",
+                fontSize: "50px",
+                marginBottom: "3px",
+              }}
+            />
+            Sass
           </div>
         </div>
       </div>

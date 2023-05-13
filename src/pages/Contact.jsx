@@ -47,7 +47,7 @@ function Contact() {
       </div>
       <form onSubmit={onSubmit} id="contact-form" action="">
         <div className="form-container">
-          <h1>Please get in touch...</h1>
+          <h1> Please get in touch</h1>
           <div className="form-info">
             <input
               type="text"

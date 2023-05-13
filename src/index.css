@@ -355,14 +355,23 @@ body, html {
   margin-bottom: 0px;
   margin-top: 10px;
 
+
 }
 
 .sub-container-about {
+
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
   width: 100%;
 }
+
+.img-me {
+  margin-bottom: 35px;
+
+}
+
+
 
 .about-description p {
 
@@ -381,6 +390,10 @@ body, html {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+  }
+
+  .img-me {
+    margin-bottom: -10px;
   }
 }
 
@@ -737,7 +750,7 @@ p, h1 {
 .form-container h1, h2 {
   color: #161a1d;
   font-size: 1.5rem;
-  margin: 20px auto;
+  margin: 10px auto;
 }
 
 .form-info input {
@@ -753,7 +766,7 @@ p, h1 {
 
 .form-control-message {
   font-size: 20px;
-  height: 100px;
+  height: 200px;
   width: 600px;
   background-color: #4a4e69;
   border: solid 1px black;
@@ -768,11 +781,12 @@ p, h1 {
   margin: 10px auto;
   background-color: transparent;
   border: 1px solid #161a1d;
-  border-radius: 5px;
+
   cursor: pointer;
   flex: 1;
-  font-size: 12px;
+  font-size: 15px;
   letter-spacing: 2px;
+  width: 150px;
 
 }
 
@@ -780,14 +794,16 @@ p, h1 {
   padding: 10px;
   margin: 10px auto;
   border: 1px solid #161a1d;
-  border-radius: 5px;
+
   cursor: pointer;
   flex: 1;
   font-size: 15px;
   letter-spacing: 2px;
   background-color: #15616d;
   color: #4fd9de;
-  height: 0.5rem;
+  width: 150px;
+
+
 
 }
 

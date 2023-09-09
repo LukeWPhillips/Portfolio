@@ -1,23 +1,39 @@
 import { IoIosArrowDown } from "react-icons/io";
 import { HashLink } from "react-router-hash-link";
+import { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
 function Home() {
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    setTimeout(() => {
+      window.scrollTo({
+        top: "750",
+        behavior: "smooth",
+      });
+    }, 5000);
+  }, []);
+
   return (
-    <div className="home">
-      <header>
-        <p className="header">
-          Luke Phillips <span className="underline1"></span>
-        </p>
-        <p className="header" style={{ fontSize: "3rem" }}>
-          Front End Developer
-          <span className="underline2"></span>
-        </p>
-      </header>
-      <HashLink smooth to="/page#about">
+    <div className="bg-wrap">
+      <div className="home">
+        <header>
+          <p className="header">
+            Luke Phillips <span className="underline1"></span>
+          </p>
+          <p className="header" style={{ fontSize: "3rem" }}>
+            Front End Developer
+            <span className="underline2"></span>
+          </p>
+        </header>
+
         <div className="arrow">
-          <IoIosArrowDown />
+          <HashLink smooth to="/page#about">
+            <IoIosArrowDown style={{ color: "white" }} />
+          </HashLink>
         </div>
-      </HashLink>
+      </div>
     </div>
   );
 }

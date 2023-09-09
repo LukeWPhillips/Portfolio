@@ -1,4 +1,4 @@
-import { FaHome } from "react-icons/fa";
+import { BsHexagonFill } from "react-icons/bs";
 import { SiGithub, SiLinkedin } from "react-icons/si";
 import { MdOutlineSegment } from "react-icons/md";
 import { NavHashLink, HashLink } from "react-router-hash-link";
@@ -50,7 +50,7 @@ function Navbar() {
           <ListItemButton>
             <ListItemIcon>
               <HashLink smooth to="/page#home">
-                <FaHome className="home-link" />
+                <BsHexagonFill className="home-link" />
               </HashLink>
               <li className="nav-item">
                 <NavHashLink

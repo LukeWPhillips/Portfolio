@@ -1,18 +1,19 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.43ccac9b.css",
-    "main.js": "/Portfolio/static/js/main.9e9bbf49.js",
+    "main.css": "/Portfolio/static/css/main.806883cd.css",
+    "main.js": "/Portfolio/static/js/main.ef9c2404.js",
     "static/media/camping_log.png": "/Portfolio/static/media/camping_log.15eda81493f46aff445e.png",
     "static/media/eco-houses.png": "/Portfolio/static/media/eco-houses.f176b64b736f0a188821.png",
     "static/media/meal-finder.png": "/Portfolio/static/media/meal-finder.97003b9da8a9161c2edf.png",
+    "static/media/bg5.jpg": "/Portfolio/static/media/bg5.52d624c8998114fb7dc4.jpg",
     "static/media/hawthorn_3.png": "/Portfolio/static/media/hawthorn_3.fc30ca27bfdbaa47cbe9.png",
     "static/media/me3.jpg": "/Portfolio/static/media/me3.d3b482592c6272a16f5a.jpg",
     "index.html": "/Portfolio/index.html",
-    "main.43ccac9b.css.map": "/Portfolio/static/css/main.43ccac9b.css.map",
-    "main.9e9bbf49.js.map": "/Portfolio/static/js/main.9e9bbf49.js.map"
+    "main.806883cd.css.map": "/Portfolio/static/css/main.806883cd.css.map",
+    "main.ef9c2404.js.map": "/Portfolio/static/js/main.ef9c2404.js.map"
   },
   "entrypoints": [
-    "static/css/main.43ccac9b.css",
-    "static/js/main.9e9bbf49.js"
+    "static/css/main.806883cd.css",
+    "static/js/main.ef9c2404.js"
   ]
 }

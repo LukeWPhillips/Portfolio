@@ -30,7 +30,10 @@ function Home() {
 
         <div className="arrow">
           <HashLink smooth to="/page#about">
-            <IoIosArrowDown style={{ color: "white" }} />
+            <IoIosArrowDown
+              className="arrow_style"
+              style={{ color: "white" }}
+            />
           </HashLink>
         </div>
       </div>

@@ -47,12 +47,16 @@ function Contact() {
       </div>
       <form onSubmit={onSubmit} id="contact-form" action="">
         <div className="form-container">
-          <h1> Please get in touch</h1>
+          <h1>
+            {" "}
+            Feel free to get in contact by submitting the form below and I will
+            get back to you as soon as possible.
+          </h1>
           <div className="form-info">
             <input
               type="text"
               className="form-control"
-              placeholder="Name"
+              placeholder="Enter your name"
               name="from_name"
               value={toSend.from_name}
               onChange={handleChange}
@@ -63,7 +67,7 @@ function Contact() {
             <input
               type="email"
               className="form-control"
-              placeholder="Email"
+              placeholder="Enter your email"
               name="email"
               value={toSend.email}
               onChange={handleChange}
@@ -74,7 +78,7 @@ function Contact() {
             <textarea
               type="text"
               className="form-control-message"
-              placeholder="Message"
+              placeholder="Enter your message"
               name="message"
               value={toSend.message}
               onChange={handleChange}

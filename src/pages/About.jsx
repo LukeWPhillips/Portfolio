@@ -11,6 +11,7 @@ import { FaGitAlt, FaNpm, FaReact, FaSass } from "react-icons/fa";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import me_img from "../assets/jpg/me3.jpg";
+import { HashLink } from "react-router-hash-link";
 
 function About() {
   useEffect(() => {
@@ -32,17 +33,34 @@ function About() {
           data-aos-duration="2000"
           className="about-description"
         >
-          <p style={{ letterSpacing: "2px", fontWeight: "600" }}>
-            Im a front end developer who is passionate about creating responsive
-            applications and experiences. <br />I completed a diploma in
-            computing when i was younger, fast forward and i have now reignited
-            my coding journey, learning new languages and freelancing on the
-            side.
+          <div>
             <p>
-              If im not coding you will find me out on hiking trails with my
-              family or on the water wing surfing.
+              I am a Front-End Developer with a unique background in plumbing.
+              After several fulfilling years as a tradesman, I decided to pursue
+              my love for technology and design by transitioning into the world
+              of web development.
             </p>
-          </p>
+            <p>
+              This career shift has allowed me to combine my creativity,
+              problem-solving skills, and dedication to creating meaningful user
+              experiences.
+              <p>
+                If im not coding you will find me out on hiking trails with my
+                family or out on the water wing surfing.
+              </p>
+            </p>
+            <p>
+              I am currently seeking new job opportunities where I can make
+              meaningful contributions, continuously learn, and grow as a
+              Front-End Developer. If you have an exciting opportunity that
+              aligns with my skills and experience, I would love to hear from
+              you. Please feel free to get in{" "}
+              <a href="/page#contact" style={{ color: "white" }}>
+                contact
+              </a>
+              .
+            </p>
+          </div>
         </div>
       </div>
       <div className="sub-header" style={{ marginTop: "3rem" }}>

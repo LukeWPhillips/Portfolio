@@ -4,7 +4,7 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import Home from "./pages/Home";
+
 import HashLinkPage from "./components/HashLinkPage";
 
 function App() {
@@ -13,7 +13,7 @@ function App() {
       <Router>
         <Navbar />
         <Routes>
-          <Route exact path="/portfolio" element={<Home />} />
+          <Route exact path="/" element={<HashLinkPage />} />
           <Route exact path="/page" element={<HashLinkPage />} />
         </Routes>
         <Footer />

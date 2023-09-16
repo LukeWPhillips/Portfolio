@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.6bbd032b.css",
-    "main.js": "/Portfolio/static/js/main.2fb70a7d.js",
-    "static/media/camping_log.png": "/Portfolio/static/media/camping_log.15eda81493f46aff445e.png",
-    "static/media/eco-houses.png": "/Portfolio/static/media/eco-houses.f176b64b736f0a188821.png",
-    "static/media/meal-finder.png": "/Portfolio/static/media/meal-finder.97003b9da8a9161c2edf.png",
-    "static/media/bg5.jpg": "/Portfolio/static/media/bg5.52d624c8998114fb7dc4.jpg",
-    "static/media/hawthorn_3.png": "/Portfolio/static/media/hawthorn_3.fc30ca27bfdbaa47cbe9.png",
-    "static/media/me3.jpg": "/Portfolio/static/media/me3.d3b482592c6272a16f5a.jpg",
-    "index.html": "/Portfolio/index.html",
-    "main.6bbd032b.css.map": "/Portfolio/static/css/main.6bbd032b.css.map",
-    "main.2fb70a7d.js.map": "/Portfolio/static/js/main.2fb70a7d.js.map"
+    "main.css": "./static/css/main.52a814c6.css",
+    "main.js": "./static/js/main.1b296aa8.js",
+    "static/media/camping_log.png": "./static/media/camping_log.15eda81493f46aff445e.png",
+    "static/media/eco-houses.png": "./static/media/eco-houses.f176b64b736f0a188821.png",
+    "static/media/meal-finder.png": "./static/media/meal-finder.97003b9da8a9161c2edf.png",
+    "static/media/bg5.jpg": "./static/media/bg5.52d624c8998114fb7dc4.jpg",
+    "static/media/hawthorn_3.png": "./static/media/hawthorn_3.fc30ca27bfdbaa47cbe9.png",
+    "static/media/me3.jpg": "./static/media/me3.d3b482592c6272a16f5a.jpg",
+    "index.html": "./index.html",
+    "main.52a814c6.css.map": "./static/css/main.52a814c6.css.map",
+    "main.1b296aa8.js.map": "./static/js/main.1b296aa8.js.map"
   },
   "entrypoints": [
-    "static/css/main.6bbd032b.css",
-    "static/js/main.2fb70a7d.js"
+    "static/css/main.52a814c6.css",
+    "static/js/main.1b296aa8.js"
   ]
 }

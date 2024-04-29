@@ -1,8 +1,9 @@
 {
   "name": "portfolio",
-  "homepage": "https://lukewphillips.github.io/Portfolio/",
+  "homepage": "https://starfish-app-byvye.ondigitalocean.app/",
   "version": "0.1.0",
   "private": true,
+  "author": "Luke Phillips",
   "dependencies": {
     "@emotion/react": "^11.10.4",
     "@emotion/styled": "^11.10.4",

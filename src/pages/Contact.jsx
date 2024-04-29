@@ -42,7 +42,7 @@ function Contact() {
   return (
     <div className="contacts-container">
       <div className="sub-header">
-        <h1>Contact</h1>
+        <h1>Get In Touch</h1>
         <div className="sub-header_underline_contact"></div>
       </div>
       <form onSubmit={onSubmit} id="contact-form" action="">

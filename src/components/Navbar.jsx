@@ -2,9 +2,9 @@ import { BsHexagonFill } from "react-icons/bs";
 import { SiGithub, SiLinkedin } from "react-icons/si";
 import { MdOutlineSegment } from "react-icons/md";
 import { NavHashLink, HashLink } from "react-router-hash-link";
-
 import * as React from "react";
 import Box from "@mui/material/Box";
+import { GiEclipse } from "react-icons/gi";
 import Drawer from "@mui/material/Drawer";
 import List from "@mui/material/List";
 import Divider from "@mui/material/Divider";
@@ -12,6 +12,11 @@ import ListItem from "@mui/material/ListItem";
 import ListItemButton from "@mui/material/ListItemButton";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
+import { useState, useContext } from "react";
+import FormGroup from "@mui/material/FormGroup";
+import FormControlLabel from "@mui/material/FormControlLabel";
+import Switch from "@mui/material/Switch";
+import { ThemeContext } from "../context/DarkModeContext";
 // import InboxIcon from "@mui/icons-material/MoveToInbox";
 // import MailIcon from "@mui/icons-material/Mail";
 
@@ -22,6 +27,20 @@ function Navbar() {
     bottom: false,
     right: false,
   });
+
+  // ----- DARK MODE TOGGLE -----
+
+  const [checked, setChecked] = useState(false);
+
+  const { toggleDarkMode } = useContext(ThemeContext);
+
+  const onClick = () => {
+    toggleDarkMode();
+  };
+
+  const toggleChecked = () => {
+    setChecked((prev) => !prev);
+  };
 
   const linkStyle = {
     textDecoration: "none",
@@ -48,9 +67,9 @@ function Navbar() {
       <List>
         <ListItem disablePadding>
           <ListItemButton>
-            <ListItemIcon>
+            <ListItemIcon className="list-container">
               <HashLink smooth to="/page#home">
-                <BsHexagonFill className="home-link" />
+                <GiEclipse className="home-link" />
               </HashLink>
               <li className="nav-item">
                 <NavHashLink
@@ -117,6 +136,21 @@ function Navbar() {
                 <SiLinkedin />
               </a>
             </div>
+          </div>
+          <div className="switch">
+            <FormGroup>
+              <FormControlLabel
+                control={
+                  <Switch
+                    defaultChecked
+                    onChange={toggleChecked}
+                    onClick={onClick}
+                  />
+                }
+                label={` ${checked ? "LIGHT" : "DARK"}`}
+                className="top-dark-mode-button"
+              />
+            </FormGroup>
           </div>
 
           {["top"].map((anchor) => (

@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/Portfolio/static/css/main.9aaf945e.css",
+    "main.js": "/Portfolio/static/js/main.735e304f.js",
+    "static/media/bg-4.png": "/Portfolio/static/media/bg-4.e1e3db251fcef37d89b1.png",
+    "static/media/camping_log.png": "/Portfolio/static/media/camping_log.15eda81493f46aff445e.png",
+    "static/media/eco-houses.png": "/Portfolio/static/media/eco-houses.f176b64b736f0a188821.png",
+    "static/media/enso.png": "/Portfolio/static/media/enso.e5027c464242e12ca323.png",
+    "static/media/nebula-3.jpg": "/Portfolio/static/media/nebula-3.8f46fa2a38a4247bb2cc.jpg",
+    "static/media/hawthorn_3.png": "/Portfolio/static/media/hawthorn_3.fc30ca27bfdbaa47cbe9.png",
+    "static/media/me3.jpg": "/Portfolio/static/media/me3.d3b482592c6272a16f5a.jpg",
+    "index.html": "/Portfolio/index.html",
+    "main.9aaf945e.css.map": "/Portfolio/static/css/main.9aaf945e.css.map",
+    "main.735e304f.js.map": "/Portfolio/static/js/main.735e304f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9aaf945e.css",
+    "static/js/main.735e304f.js"
+  ]
+}

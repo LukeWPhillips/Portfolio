@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useContext } from "react";
 import {
   SiNodedotjs,
   SiJavascript,
@@ -7,67 +7,149 @@ import {
   SiMongodb,
 } from "react-icons/si";
 import { DiCss3 } from "react-icons/di";
-import { FaGitAlt, FaNpm, FaReact, FaSass } from "react-icons/fa";
+import {
+  FaGitAlt,
+  FaNpm,
+  FaReact,
+  FaSass,
+  FaPaintBrush,
+  FaCode,
+} from "react-icons/fa";
+import { GrOptimize } from "react-icons/gr";
+import { TbBrandNextjs } from "react-icons/tb";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import me_img from "../assets/jpg/me3.jpg";
 import { HashLink } from "react-router-hash-link";
+import { ThemeContext } from "../context/DarkModeContext";
 
 function About() {
+  const { darkMode } = useContext(ThemeContext);
+
   useEffect(() => {
     Aos.init();
   }, []);
 
   return (
-    <div className="about-container">
-      <div className="sub-header" style={{ marginTop: "1rem" }}>
-        <h1>About Me</h1>
+    <div
+      className={darkMode ? "about-container-dark" : "about-container-light"}
+    >
+      {/* <div className="sub-header" style={{ marginTop: "1rem" }}>
+        <h1 className="about-h1">About Me</h1>
         <div className="sub-header_underline"></div>
-      </div>
+      </div> */}
       <div className="sub-container-about">
         <div className="img-me">
-          <img src={me_img} alt="" id="img" />
+          <img
+            data-aos="slide-right"
+            data-aos-duration="1500"
+            src={me_img}
+            alt=""
+            id="img"
+          />
         </div>
         <div
-          data-aos="slide-up"
-          data-aos-duration="2000"
-          className="about-description"
+          className={
+            darkMode ? "about-description-dark" : "about-description-light"
+          }
         >
           <div>
-            <p>
-              I am a Front-End Developer with a unique background in plumbing.
-              After several fulfilling years as a tradesman, I decided to pursue
-              my love for technology and design by transitioning into the world
-              of web development.
+            <h3>HI, I'M LUKE</h3>
+            <p data-aos="slide-left" data-aos-duration="1500">
+              I'm a freelance front-end developer with a passion for creating
+              bespoke applications. I specialise in creating responsive,
+              accessible and SEO friendly websites.
             </p>
-            <p>
-              This career shift has allowed me to combine my creativity,
-              problem-solving skills, and dedication to creating meaningful user
-              experiences.
+            <p data-aos="slide-left" data-aos-duration="1500">
+              Custom designed and hand coded to ensure the best performance,
+              which helps bring in more traffic to your site and bring more
+              revenue to your business.
+            </p>
+            <p data-aos="slide-left" data-aos-duration="1500"></p>
+          </div>
+        </div>
+      </div>
+
+      <div className="services-container">
+        <div className="services-row">
+          <div>
+            <div
+              className={
+                darkMode ? "services-item-dark" : "services-item-light"
+              }
+            >
+              <h3>
+                {" "}
+                <FaPaintBrush
+                  style={{
+                    marginRight: "5px",
+                    color: "#f8c82b",
+                    height: "15px",
+                  }}
+                />
+                Web Design
+              </h3>
               <p>
-                If im not coding you will find me out on hiking trails with my
-                family or out on the water wing surfing.
+                My approach involves getting to know you and understand your
+                brand and what you want to achieve from your website. Designing
+                in mobile-first and building up to desktop.
               </p>
-            </p>
-            <p>
-              I am currently seeking new job opportunities where I can make
-              meaningful contributions, continuously learn, and grow as a
-              Front-End Developer. If you have an exciting opportunity that
-              aligns with my skills and experience, I would love to hear from
-              you. Please feel free to get in{" "}
-              <a href="/page#contact" style={{ color: "white" }}>
-                contact
-              </a>
-              .
-            </p>
+            </div>
+          </div>
+          <div>
+            <div
+              className={
+                darkMode ? "services-item-dark" : "services-item-light"
+              }
+            >
+              <h3>
+                <FaCode
+                  style={{
+                    marginRight: "5px",
+                    color: "#f8c82b",
+                    height: "15px",
+                  }}
+                />
+                Web Development
+              </h3>
+              <p>
+                Choosing the right tools for your site to deliver the best user
+                experience, whilst being fully responsive and working across all
+                devices.
+              </p>
+            </div>
+          </div>
+          <div>
+            <div
+              className={
+                darkMode ? "services-item-dark" : "services-item-light"
+              }
+            >
+              <h3>
+                {" "}
+                <GrOptimize
+                  style={{
+                    marginRight: "5px",
+                    color: "#f8c82b",
+                    height: "15px",
+                  }}
+                />{" "}
+                Optimisation
+              </h3>
+              <p>
+                Optimising your website to perform at its best for page load
+                speed and search engine optimisation. Ensuring accessibility and
+                best practices.
+              </p>
+            </div>
           </div>
         </div>
       </div>
       <div className="sub-header" style={{ marginTop: "3rem" }}>
-        <h1>Skills</h1>
+        <h1>Tools I use... </h1>
         <div className="sub-header_underline"></div>
       </div>
-      <div className="sub-container">
+      <div className={darkMode ? "sub-container-dark" : "sub-container-light"}>
         <div
           data-aos="slide-up"
           data-aos-duration="2000"
@@ -81,27 +163,19 @@ function About() {
                 marginBottom: "3px",
               }}
             />
-            Javascript
+            <p style={{ color: darkMode ? "white" : "black" }}>Javascript</p>
           </div>
           <div className="skills-item">
-            <DiCss3 style={{ fontSize: "50px", marginBottom: "3px" }} />
-            CSS3
-          </div>
-          <div className="skills-item">
-            <FaGitAlt
+            <DiCss3
               style={{
-                color: "#78a1bb",
                 fontSize: "50px",
                 marginBottom: "3px",
+                color: darkMode ? "white" : "black",
               }}
             />
-            Git
+            <p style={{ color: darkMode ? "white" : "black" }}>CSS</p>
           </div>
 
-          <div className="skills-item">
-            <SiGithub style={{ fontSize: "50px", marginBottom: "3px" }} />
-            Github
-          </div>
           <div className="skills-item">
             <SiHtml5
               style={{
@@ -110,11 +184,17 @@ function About() {
                 marginBottom: "3px",
               }}
             />
-            HTML5
+            <p style={{ color: darkMode ? "white" : "black" }}>HTML</p>
           </div>
           <div className="skills-item">
-            <SiMongodb style={{ fontSize: "50px", marginBottom: "3px" }} />
-            MongoDB
+            <SiMongodb
+              style={{
+                fontSize: "50px",
+                marginBottom: "3px",
+                color: darkMode ? "white" : "black",
+              }}
+            />
+            <p style={{ color: darkMode ? "white" : "black" }}>MongoDB</p>
           </div>
           <div className="skills-item">
             <SiNodedotjs
@@ -124,11 +204,17 @@ function About() {
                 marginBottom: "3px",
               }}
             />
-            NodeJS
+            <p style={{ color: darkMode ? "white" : "black" }}>NodeJS</p>
           </div>
           <div className="skills-item">
-            <FaNpm style={{ fontSize: "50px", marginBottom: "3px" }} />
-            NPM
+            <FaNpm
+              style={{
+                fontSize: "50px",
+                marginBottom: "3px",
+                color: darkMode ? "white" : "black",
+              }}
+            />
+            <p style={{ color: darkMode ? "white" : "black" }}>NPM</p>
           </div>
           <div className="skills-item">
             <FaReact
@@ -138,17 +224,37 @@ function About() {
                 marginBottom: "3px",
               }}
             />
-            ReactJS
+            <p style={{ color: darkMode ? "white" : "black" }}>ReactJS</p>
           </div>
           <div className="skills-item">
             <FaSass
+              style={{
+                color: darkMode ? "white" : "black",
+                fontSize: "50px",
+                marginBottom: "3px",
+              }}
+            />
+            <p style={{ color: darkMode ? "white" : "black" }}>Sass</p>
+          </div>
+          <div className="skills-item">
+            <TbBrandNextjs
               style={{
                 color: "#78a1bb",
                 fontSize: "50px",
                 marginBottom: "3px",
               }}
             />
-            Sass
+            <p style={{ color: darkMode ? "white" : "black" }}>NextJS</p>
+          </div>
+          <div className="skills-item">
+            <SiGithub
+              style={{
+                fontSize: "50px",
+                marginBottom: "3px",
+                color: darkMode ? "white" : "black",
+              }}
+            />
+            <p style={{ color: darkMode ? "white" : "black" }}>Github</p>
           </div>
         </div>
       </div>

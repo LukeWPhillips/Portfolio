@@ -14,7 +14,7 @@ function App() {
       <Router>
         <Navbar />
         <Routes>
-          <Route exact path="/portfolio" element={<HashLinkPage />} />
+          <Route exact path="/" element={<HashLinkPage />} />
           <Route exact path="/page" element={<HashLinkPage />} />
         </Routes>
         <Footer />

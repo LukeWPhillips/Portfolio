@@ -56,16 +56,21 @@ function About() {
           <div>
             <h3>HI, I'M LUKE</h3>
             <p data-aos="slide-left" data-aos-duration="1500">
-              I'm a freelance front-end developer with a passion for creating
-              bespoke applications. I specialise in creating responsive,
-              accessible and SEO friendly websites.
+              As a freelance web developer, I have a passion for crafting
+              bespoke applications tailored to your unique needs. My expertise
+              lies in developing responsive, accessible, and SEO-friendly
+              websites that elevate your online presence.
             </p>
             <p data-aos="slide-left" data-aos-duration="1500">
-              Custom designed and hand coded to ensure the best performance,
-              which helps bring in more traffic to your site and bring more
-              revenue to your business.
+              Every project I take on involves custom design and is hand-coded
+              to ensure optimal performance. Prioritizing performance not only
+              attracts more traffic to your website but also leads to increased
+              revenue for your business.
             </p>
-            <p data-aos="slide-left" data-aos-duration="1500"></p>
+            <p data-aos="slide-left" data-aos-duration="1500">
+              Whether you're launching a new website or revamping an existing
+              one, here at Lumi, I can help you achieve your goals.
+            </p>
           </div>
         </div>
       </div>
@@ -92,7 +97,7 @@ function About() {
               <p>
                 My approach involves getting to know you and understand your
                 brand and what you want to achieve from your website. Designing
-                in mobile-first and building up to desktop.
+                in mobile-first and building up.
               </p>
             </div>
           </div>

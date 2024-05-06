@@ -33,7 +33,6 @@ html {
   display: flex;
   align-items: center;
   list-style: none;
-  font-size: 15px;
 }
 
 .nav-item {
@@ -42,6 +41,7 @@ html {
   font-style: bold;
   text-decoration: none;
   margin-top: 20px;
+  font-size: 1.5rem;
 }
 
 #dots-menu {
@@ -311,7 +311,7 @@ html {
 @media (max-width: 768px) {
   .wordchange-light::before {
     font-family: "montserrat", serif;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     margin: 20px;
   }
   .home_p-light {
@@ -638,8 +638,8 @@ html {
 
 .shooting_star-dark {
   position: absolute;
-  right: 50%;
-  top: -13.59%;
+  right: 90%;
+  top: -15%;
   width: 1px;
   height: 70px;
   background: #fff;
@@ -649,6 +649,7 @@ html {
   animation-iteration-count: infinite;
   animation-timing-function: ease-in;
   animation-delay: 1s;
+  overflow: hidden;
 }
 .shooting_star-light {
   visibility: hidden;
@@ -1177,6 +1178,7 @@ h1 {
   height: 20rem;
   flex-direction: column;
   width: 70%;
+  margin-bottom: 100px;
 }
 
 .form-container h1,
@@ -1335,8 +1337,8 @@ h2 {
 
 @keyframes shootingStar {
   0% {
-    top: -13.59%;
-    right: 60%;
+    top: -13%;
+    right: 95%;
   }
 
   2% {
@@ -1377,7 +1379,7 @@ h2 {
 
   100% {
     top: 70%;
-    left: 120%;
+    left: 100%;
     transform: rotate(360deg);
   }
 }

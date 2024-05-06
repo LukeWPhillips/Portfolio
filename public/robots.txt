@@ -1,3 +1,6 @@
-# https://www.robotstxt.org/robotstxt.html
-User-agent: *
-Disallow:
+User-Agent: *
+Allow: /
+Disallow: /private/
+
+Sitemap: https://www.lumidesigns.dev/sitemap.xml
+Sitemap: https://lumidesigns.dev/sitemap.xml

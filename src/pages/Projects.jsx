@@ -46,9 +46,15 @@ function Projects() {
         <div className="all-items">
           <Card reverse={true}>
             <div className="left">
-              <div className="project-image">
-                <img src={Project_img1} alt="" />
-              </div>
+              <a
+                href="https://www.ensobuild.com.au/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <div className="project-image">
+                  <img src={Project_img1} alt="project-img" />
+                </div>
+              </a>
             </div>
 
             <div className="right">
@@ -83,9 +89,15 @@ function Projects() {
           </Card>
           <Card>
             <div className="left">
-              <div className="project-image">
-                <img src={Hawthorn_GC} alt="hawthornGc" />
-              </div>
+              <a
+                href="https://hawthorngardencare.co.uk"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <div className="project-image">
+                  <img src={Hawthorn_GC} alt="hawthornGc" />
+                </div>
+              </a>
             </div>
 
             <div className="right">
@@ -131,9 +143,15 @@ function Projects() {
 
           <Card reverse={true}>
             <div className="left">
-              <div className="project-image">
-                <img src={Eco_houses} alt="" />
-              </div>
+              <a
+                href="https://lukewphillips.github.io/eco-houses/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <div className="project-image">
+                  <img src={Eco_houses} alt="" />
+                </div>
+              </a>
             </div>
 
             <div className="right">
@@ -175,9 +193,15 @@ function Projects() {
           </Card>
           <Card>
             <div className="left">
-              <div className="project-image">
-                <img src={Project_camping} alt="" />
-              </div>
+              <a
+                href="https://camping-log.onrender.com"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <div className="project-image">
+                  <img src={Project_camping} alt="" />
+                </div>
+              </a>
             </div>
 
             <div className="right">

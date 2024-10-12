@@ -15,8 +15,11 @@ import ListItemText from "@mui/material/ListItemText";
 import { useState, useContext } from "react";
 import FormGroup from "@mui/material/FormGroup";
 import FormControlLabel from "@mui/material/FormControlLabel";
+import { styled } from "@mui/material/styles";
 import Switch from "@mui/material/Switch";
 import { ThemeContext } from "../context/DarkModeContext";
+import moon from "../assets/svg/moon.svg";
+import sun from "../assets/svg/node.svg";
 // import InboxIcon from "@mui/icons-material/MoveToInbox";
 // import MailIcon from "@mui/icons-material/Mail";
 
@@ -32,7 +35,7 @@ function Navbar() {
 
   const [checked, setChecked] = useState(false);
 
-  const { toggleDarkMode } = useContext(ThemeContext);
+  const { toggleDarkMode, darkMode } = useContext(ThemeContext);
 
   const onClick = () => {
     toggleDarkMode();
@@ -137,20 +140,22 @@ function Navbar() {
               </a>
             </div>
           </div>
-          <div className="switch">
+          {/* <div className="switch">
             <FormGroup>
               <FormControlLabel
-                control={
-                  <Switch
-                    defaultChecked
-                    onChange={toggleChecked}
-                    onClick={onClick}
-                  />
-                }
-                label={` ${checked ? "LIGHT" : "DARK"}`}
+                control={<Switch defaultChecked />}
                 className="top-dark-mode-button"
+                label={` ${checked ? "LIGHT" : "DARK"}`}
               />
             </FormGroup>
+          </div> */}
+          <div
+            className="top-dark-mode-button"
+            onChange={toggleChecked}
+            onClick={onClick}
+          >
+            {" "}
+            <button className={darkMode === true ? "dark" : "light"}></button>
           </div>
 
           {["top"].map((anchor) => (

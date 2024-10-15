@@ -145,14 +145,14 @@ function Navbar() {
               />
             </FormGroup>
           </div> */}
-          {/* <div
+          <div
             className="top-dark-mode-button"
             onChange={toggleChecked}
             onClick={onClick}
           >
             {" "}
             <button className={darkMode === true ? "dark" : "light"}></button>
-          </div> */}
+          </div>
 
           {["top"].map((anchor) => (
             <React.Fragment key={anchor}>

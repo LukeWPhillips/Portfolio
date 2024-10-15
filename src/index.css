@@ -427,11 +427,15 @@ html {
 /* -----Dark bg universe ------- */
 /* -----Dark bg universe ------- */
 
-.universe {
+.universe-dark {
   width: 100%;
   height: 100%;
   position: absolute;
   top: 0;
+}
+
+.universe-light {
+  visibility: hidden;
 }
 
 .star-dark {
@@ -656,7 +660,7 @@ html {
   animation: none;
 }
 
-.satellite {
+.satellite-dark {
   position: absolute;
   top: 10%;
   left: 0;
@@ -666,6 +670,11 @@ html {
   animation-timing-function: linear;
   animation-fill-mode: forwards;
   animation-delay: 10s;
+}
+
+.satellite-light {
+  visibility: hidden;
+  animation: none;
 }
 
 :root {

@@ -4,11 +4,8 @@
   position: absolute;
   top: 22px;
   right: 80px;
-
-  font-family: "Courier New", Courier, monospace;
   z-index: 1000;
   transition: 0.3s ease-in;
-  height: 200px;
 }
 .dark {
   height: 50px;
@@ -17,11 +14,12 @@
   background-color: transparent;
   background-image: url("./assets/svg/sun.svg");
   background-repeat: no-repeat;
+  padding: 1px;
 }
 .light {
   height: 50px;
   width: 50px;
-
+  padding: 1px;
   background-color: transparent;
   border: none;
   background-image: url("./assets/svg/moon.svg");

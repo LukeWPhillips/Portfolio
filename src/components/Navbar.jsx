@@ -13,13 +13,9 @@ import ListItemButton from "@mui/material/ListItemButton";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
 import { useState, useContext } from "react";
-import FormGroup from "@mui/material/FormGroup";
-import FormControlLabel from "@mui/material/FormControlLabel";
-import { styled } from "@mui/material/styles";
-import Switch from "@mui/material/Switch";
+
 import { ThemeContext } from "../context/DarkModeContext";
-import moon from "../assets/svg/moon.svg";
-import sun from "../assets/svg/node.svg";
+
 // import InboxIcon from "@mui/icons-material/MoveToInbox";
 // import MailIcon from "@mui/icons-material/Mail";
 

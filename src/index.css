@@ -275,7 +275,7 @@ html {
   color: #7bc3c7;
 }
 
-@media (max-width: 500px) {
+@media (prefers-color-scheme: light), (max-width: 500px) {
   .header-light {
     margin-top: 100px;
     margin-left: 20px;
@@ -308,7 +308,7 @@ html {
   }
 }
 
-@media (max-width: 768px) {
+@media (prefers-color-scheme: light), (max-width: 768px) {
   .wordchange-light::before {
     font-family: "montserrat", serif;
     font-size: 1.3rem;
@@ -321,7 +321,7 @@ html {
   }
 }
 
-@media (min-width: 800px) {
+@media (prefers-color-scheme: light), (min-width: 800px) {
   .laptop-light {
     position: absolute;
     top: -9%;

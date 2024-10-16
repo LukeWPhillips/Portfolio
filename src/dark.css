@@ -120,7 +120,7 @@
   color: black;
 }
 
-@media (max-width: 500px) {
+@media (prefers-color-scheme: dark), (max-width: 500px) {
   .home-dark {
     height: fit-content;
   }

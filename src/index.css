@@ -783,12 +783,13 @@ html {
 .services-item-light h3 {
   font-family: "DM Serif Display", serif;
   font-size: 1.9rem;
+  color: #000000;
 }
 .services-item-light p {
   font-family: "montserrat", serif;
   line-height: 1.5;
   font-weight: 200;
-  font-size: 1rem;
+  font-size: 1.3rem;
   color: #000000;
 }
 

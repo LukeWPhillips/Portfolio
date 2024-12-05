@@ -87,9 +87,9 @@ function About() {
                 {" "}
                 <FaPaintBrush
                   style={{
-                    marginRight: "5px",
+                    marginRight: "15px",
                     color: "#f8c82b",
-                    height: "15px",
+                    height: "25px",
                   }}
                 />
                 Web Design
@@ -110,9 +110,9 @@ function About() {
               <h3>
                 <FaCode
                   style={{
-                    marginRight: "5px",
+                    marginRight: "10px",
                     color: "#f8c82b",
-                    height: "15px",
+                    height: "25px",
                   }}
                 />
                 Web Development
@@ -136,7 +136,7 @@ function About() {
                   style={{
                     marginRight: "5px",
                     color: "#f8c82b",
-                    height: "15px",
+                    height: "25px",
                   }}
                 />{" "}
                 Optimisation

@@ -2,7 +2,7 @@ import { NavHashLink, HashLink } from "react-router-hash-link";
 import { ThemeContext } from "../context/DarkModeContext";
 import { useContext } from "react";
 import nebula from "../assets/jpg/nebula-3.jpg";
-import laptop from "../assets/jpg/bg-4.png";
+import laptop from "../assets/jpg/bg-4.webp";
 import curve from "../assets/png/rectangle.png";
 import curve_two from "../assets/png/Rectangle-4.png";
 

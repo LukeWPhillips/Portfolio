@@ -1,7 +1,6 @@
 import React from "react";
-import Hawthorn_GC from "../assets/png/hawthorn_3.png";
-import makerspath from "../assets/png/mkrs4.png";
-import Lp from "../assets/png/lp3.png";
+import makerspath from "../assets/png/mkrs4.webp";
+import Lp from "../assets/png/lp3.webp";
 import Eco_houses from "../assets/png/eco-houses.png";
 import Project_camping from "../assets/png/camping_log.png";
 import {

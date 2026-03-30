@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/static/css/main.a878f537.css",
+    "main.js": "/static/js/main.017cab7a.js",
+    "static/media/camping_log.png": "/static/media/camping_log.15eda81493f46aff445e.png",
+    "static/media/eco-houses.png": "/static/media/eco-houses.f176b64b736f0a188821.png",
+    "static/media/nebula-3.jpg": "/static/media/nebula-3.8f46fa2a38a4247bb2cc.jpg",
+    "static/media/me3.jpg": "/static/media/me3.d3b482592c6272a16f5a.jpg",
+    "static/media/lp3.webp": "/static/media/lp3.e323dc33f8cd1a793066.webp",
+    "static/media/mkrs4.webp": "/static/media/mkrs4.e7ed3d79ed73c0bde638.webp",
+    "static/media/bg-4.webp": "/static/media/bg-4.261a32ca05ae6a419ecc.webp",
+    "index.html": "/index.html",
+    "static/media/sun.svg": "/static/media/sun.df9135a25b7f52fe632f.svg",
+    "static/media/moon.svg": "/static/media/moon.5067b323979d19ae5ef9.svg",
+    "main.a878f537.css.map": "/static/css/main.a878f537.css.map",
+    "main.017cab7a.js.map": "/static/js/main.017cab7a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a878f537.css",
+    "static/js/main.017cab7a.js"
+  ]
+}

@@ -7,20 +7,12 @@ import {
   SiMongodb,
 } from "react-icons/si";
 import { DiCss3 } from "react-icons/di";
-import {
-  FaGitAlt,
-  FaNpm,
-  FaReact,
-  FaSass,
-  FaPaintBrush,
-  FaCode,
-} from "react-icons/fa";
+import { FaNpm, FaReact, FaSass, FaPaintBrush, FaCode } from "react-icons/fa";
 import { GrOptimize } from "react-icons/gr";
 import { TbBrandNextjs } from "react-icons/tb";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import me_img from "../assets/jpg/me3.jpg";
-import { HashLink } from "react-router-hash-link";
 import { ThemeContext } from "../context/DarkModeContext";
 
 function About() {

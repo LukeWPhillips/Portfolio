@@ -1,7 +1,4 @@
-import { IoIosArrowDown } from "react-icons/io";
 import { NavHashLink, HashLink } from "react-router-hash-link";
-import { useEffect } from "react";
-import { useNavigate } from "react-router-dom";
 import { ThemeContext } from "../context/DarkModeContext";
 import { useContext } from "react";
 import nebula from "../assets/jpg/nebula-3.jpg";

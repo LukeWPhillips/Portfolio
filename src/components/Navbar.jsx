@@ -1,4 +1,3 @@
-import { BsHexagonFill } from "react-icons/bs";
 import { SiGithub, SiLinkedin } from "react-icons/si";
 import { MdOutlineSegment } from "react-icons/md";
 import { NavHashLink, HashLink } from "react-router-hash-link";

@@ -2,9 +2,12 @@ import { useEffect, useContext } from "react";
 import {
   SiNodedotjs,
   SiJavascript,
-  SiGithub,
   SiHtml5,
   SiMongodb,
+  SiTypescript,
+  SiTailwindcss,
+  SiStripe,
+  SiSupabase,
 } from "react-icons/si";
 import { DiCss3 } from "react-icons/di";
 import { FaNpm, FaReact, FaSass, FaPaintBrush, FaCode } from "react-icons/fa";
@@ -26,10 +29,6 @@ function About() {
     <div
       className={darkMode ? "about-container-dark" : "about-container-light"}
     >
-      {/* <div className="sub-header" style={{ marginTop: "1rem" }}>
-        <h1 className="about-h1">About Me</h1>
-        <div className="sub-header_underline"></div>
-      </div> */}
       <div className="sub-container-about">
         <div className="img-me">
           <img
@@ -76,7 +75,6 @@ function About() {
               }
             >
               <h3>
-                {" "}
                 <FaPaintBrush
                   style={{
                     marginRight: "15px",
@@ -123,14 +121,13 @@ function About() {
               }
             >
               <h3>
-                {" "}
                 <GrOptimize
                   style={{
                     marginRight: "5px",
                     color: "#f8c82b",
                     height: "25px",
                   }}
-                />{" "}
+                />
                 Optimisation
               </h3>
               <p>
@@ -142,10 +139,12 @@ function About() {
           </div>
         </div>
       </div>
+
       <div className="sub-header" style={{ marginTop: "3rem" }}>
         <h1>Tools I use... </h1>
         <div className="sub-header_underline"></div>
       </div>
+
       <div className={darkMode ? "sub-container-dark" : "sub-container-light"}>
         <div
           data-aos="slide-up"
@@ -155,12 +154,22 @@ function About() {
           <div className="skills-item">
             <SiJavascript
               style={{
-                color: "#78a1bb",
+                color: darkMode ? "white" : "black",
                 fontSize: "50px",
                 marginBottom: "3px",
               }}
             />
             <p style={{ color: darkMode ? "white" : "black" }}>Javascript</p>
+          </div>
+          <div className="skills-item">
+            <SiTypescript
+              style={{
+                color: "#78a1bb",
+                fontSize: "50px",
+                marginBottom: "3px",
+              }}
+            />
+            <p style={{ color: darkMode ? "white" : "black" }}>TypeScript</p>
           </div>
           <div className="skills-item">
             <DiCss3
@@ -172,7 +181,6 @@ function About() {
             />
             <p style={{ color: darkMode ? "white" : "black" }}>CSS</p>
           </div>
-
           <div className="skills-item">
             <SiHtml5
               style={{
@@ -184,14 +192,35 @@ function About() {
             <p style={{ color: darkMode ? "white" : "black" }}>HTML</p>
           </div>
           <div className="skills-item">
-            <SiMongodb
+            <SiTailwindcss
               style={{
+                color: darkMode ? "white" : "black",
                 fontSize: "50px",
                 marginBottom: "3px",
-                color: darkMode ? "white" : "black",
               }}
             />
-            <p style={{ color: darkMode ? "white" : "black" }}>MongoDB</p>
+            <p style={{ color: darkMode ? "white" : "black" }}>Tailwind</p>
+          </div>
+
+          <div className="skills-item">
+            <FaReact
+              style={{
+                color: "#78a1bb",
+                fontSize: "50px",
+                marginBottom: "3px",
+              }}
+            />
+            <p style={{ color: darkMode ? "white" : "black" }}>ReactJS</p>
+          </div>
+          <div className="skills-item">
+            <TbBrandNextjs
+              style={{
+                color: darkMode ? "white" : "black",
+                fontSize: "50px",
+                marginBottom: "3px",
+              }}
+            />
+            <p style={{ color: darkMode ? "white" : "black" }}>NextJS</p>
           </div>
           <div className="skills-item">
             <SiNodedotjs
@@ -204,54 +233,35 @@ function About() {
             <p style={{ color: darkMode ? "white" : "black" }}>NodeJS</p>
           </div>
           <div className="skills-item">
-            <FaNpm
+            <SiMongodb
               style={{
                 fontSize: "50px",
                 marginBottom: "3px",
                 color: darkMode ? "white" : "black",
               }}
             />
-            <p style={{ color: darkMode ? "white" : "black" }}>NPM</p>
+            <p style={{ color: darkMode ? "white" : "black" }}>MongoDB</p>
           </div>
+
           <div className="skills-item">
-            <FaReact
+            <SiSupabase
               style={{
                 color: "#78a1bb",
                 fontSize: "50px",
                 marginBottom: "3px",
               }}
             />
-            <p style={{ color: darkMode ? "white" : "black" }}>ReactJS</p>
+            <p style={{ color: darkMode ? "white" : "black" }}>Supabase</p>
           </div>
           <div className="skills-item">
-            <FaSass
-              style={{
-                color: darkMode ? "white" : "black",
-                fontSize: "50px",
-                marginBottom: "3px",
-              }}
-            />
-            <p style={{ color: darkMode ? "white" : "black" }}>Sass</p>
-          </div>
-          <div className="skills-item">
-            <TbBrandNextjs
-              style={{
-                color: "#78a1bb",
-                fontSize: "50px",
-                marginBottom: "3px",
-              }}
-            />
-            <p style={{ color: darkMode ? "white" : "black" }}>NextJS</p>
-          </div>
-          <div className="skills-item">
-            <SiGithub
+            <SiStripe
               style={{
                 fontSize: "50px",
                 marginBottom: "3px",
                 color: darkMode ? "white" : "black",
               }}
             />
-            <p style={{ color: darkMode ? "white" : "black" }}>Github</p>
+            <p style={{ color: darkMode ? "white" : "black" }}>Stripe</p>
           </div>
         </div>
       </div>

@@ -1,12 +1,20 @@
 import React from "react";
-import Project_img1 from "../assets/png/enso.png";
 import Hawthorn_GC from "../assets/png/hawthorn_3.png";
+import makerspath from "../assets/png/mkrs4.png";
+import Lp from "../assets/png/lp3.png";
 import Eco_houses from "../assets/png/eco-houses.png";
 import Project_camping from "../assets/png/camping_log.png";
-import { SiJavascript, SiNodedotjs, SiHtml5, SiMongodb } from "react-icons/si";
-import { DiCss3 } from "react-icons/di";
-import { FaReact, FaSass } from "react-icons/fa";
+import {
+  SiJavascript,
+  SiNodedotjs,
+  SiHtml5,
+  SiMongodb,
+  SiSupabase,
+} from "react-icons/si";
+
+import { FaReact } from "react-icons/fa";
 import { TbBrandNextjs } from "react-icons/tb";
+import { SiTypescript, SiTailwindcss, SiStripe } from "react-icons/si";
 import Card from "../components/shared/Card";
 import { ThemeContext } from "../context/DarkModeContext";
 import { useContext } from "react";
@@ -23,6 +31,7 @@ function Projects() {
   };
 
   const h1Styles = {
+    fontSize: "30px",
     color: darkMode ? "#72addd" : "#72addd",
   };
   const pStyles = {
@@ -47,30 +56,29 @@ function Projects() {
           <Card reverse={true}>
             <div className="left">
               <a
-                href="https://www.ensobuild.com.au/"
+                href="https://themakerspath.co.uk/"
                 target="_blank"
                 rel="noreferrer"
               >
                 <div className="project-image">
-                  <img src={Project_img1} alt="project-img" />
+                  <img src={makerspath} alt="project-img" />
                 </div>
               </a>
             </div>
 
             <div className="right">
-              <h1 style={h1Styles}>Enso Build </h1>
+              <h1 style={h1Styles}>The Makers Path </h1>
               <p style={pStyles}>
-                Enso Build is a building company based in Sydney. Working
-                closely with the client in bringing their ideas and business to
-                the web.
-                <br /> <br />
-                Maintaining transparency throughout the project to ensure a
-                smooth process from design to deployment. Adopting NextJS to
-                bring high performance and SEO optimisation..
+                Project for a platform celebrating the independent makers and
+                creatives of Devon. Connecting users with local businesses,
+                regional events and handmade products — giving crafters a place
+                to showcase and sell their work online. Built with Next.js,
+                TypeScript and Tailwind CSS, with custom REST APIs and Stripe
+                integrated for secure payment processing.
               </p>
               <div className="project-buttons">
                 <a
-                  href="https://www.ensobuild.com.au/"
+                  href="https://themakerspath.co.uk/"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -80,40 +88,41 @@ function Projects() {
                 </a>
               </div>
               <div className="project-icons">
-                <SiJavascript style={iconStyles} />
-                <DiCss3 style={iconStyles} />
-                <SiHtml5 style={iconStyles} />
-                <TbBrandNextjs style={iconStyles} />
+                <div className="project-icons">
+                  <TbBrandNextjs style={iconStyles} />
+                  <SiTypescript style={iconStyles} />
+                  <SiTailwindcss style={iconStyles} />
+                  <SiStripe style={iconStyles} />
+                  <SiSupabase style={iconStyles} />
+                  <SiNodedotjs style={iconStyles} />
+                </div>
               </div>
             </div>
           </Card>
           <Card>
             <div className="left">
               <a
-                href="https://hawthorngardencare.co.uk"
+                href="https://lp-plumbing.co.uk"
                 target="_blank"
                 rel="noreferrer"
               >
                 <div className="project-image">
-                  <img src={Hawthorn_GC} alt="hawthornGc" />
+                  <img src={Lp} alt="lp-plumbing" />
                 </div>
               </a>
             </div>
 
             <div className="right">
-              <h1 style={h1Styles}>Hawthorn Garden Care</h1>
+              <h1 style={h1Styles}>LP - Plumbing</h1>
               <p style={pStyles}>
-                Freelance work for a local landscape gardening business based in
-                London.
-                <br />
-                <br />
-                Collaborating with the client on their requirements and bringing
-                their business to the web. Ensuring client satisfaction
-                throughout the project.
+                Built a responsive website for LP Plumbing using Next.js,
+                Tailwind CSS, and TypeScript, showcasing services, company
+                information, and contact functionality for a local plumbing
+                business.
               </p>
               <div className="project-buttons">
                 <a
-                  href="https://github.com/LukeWPhillips/Hawthorn"
+                  href="https://lp-plumbing.co.uk"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -123,7 +132,7 @@ function Projects() {
                 </a>
 
                 <a
-                  href="https://hawthorngardencare.co.uk"
+                  href="https://lp-plumbing.co.uk"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -133,10 +142,9 @@ function Projects() {
                 </a>
               </div>
               <div className="project-icons">
-                <SiJavascript style={iconStyles} />
-                <FaSass style={iconStyles} />
-                <SiHtml5 style={iconStyles} />
-                <FaReact style={iconStyles} />
+                <SiTypescript style={iconStyles} />
+                <SiTailwindcss style={iconStyles} />
+                <TbBrandNextjs style={iconStyles} />
               </div>
             </div>
           </Card>

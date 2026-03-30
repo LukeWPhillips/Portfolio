@@ -609,6 +609,7 @@ function Home() {
             </h1>
           </div>
           <div className="title-2">
+            // eslint-disable-next-line
             <h2
               className={darkMode ? "wordchange-dark" : "wordchange-light"}
             ></h2>
